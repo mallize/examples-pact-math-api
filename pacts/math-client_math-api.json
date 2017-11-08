@@ -1,0 +1,49 @@
+{
+  "provider" : {
+    "name" : "math-api"
+  },
+  "consumer" : {
+    "name" : "math-client"
+  },
+  "interactions" : [
+    {
+      "providerState" : "No State",
+      "description" : "Calling Sum",
+      "request" : {
+        "method" : "GET",
+        "path" : "/sum",
+        "query" : "numbers=1,2,3"
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "sum: 6.0"
+      }
+    },
+    {
+      "providerState" : "No State",
+      "description" : "Calling Sum",
+      "request" : {
+        "method" : "GET",
+        "path" : "/sum",
+        "query" : "numbers=1,2,3,A"
+      },
+      "response" : {
+        "status" : 400,
+        "body" : "Bad request. Example Usage http://host/sum?numbers=1,2,1,3"
+      }
+    },
+    {
+      "providerState" : "No State",
+      "description" : "Calling Sum",
+      "request" : {
+        "method" : "GET",
+        "path" : "/sum",
+        "query" : "numbers=1,2,3,A"
+      },
+      "response" : {
+        "status" : 400,
+        "body" : "Bad request. Example Usage http://host/sum?numbers=1,2,1,3"
+      }
+    }
+  ]
+}
