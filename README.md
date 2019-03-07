@@ -1,4 +1,4 @@
-To run tests against the a pacs located in /pacts use: 
+To run tests against the a pacts located in /pacts use: 
 
 ```sbt test```
 
