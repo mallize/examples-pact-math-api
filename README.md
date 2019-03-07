@@ -1,3 +1,8 @@
-To run tests against the a pacs located in /pacts use: ```sbt test```
+To run tests against the a pacs located in /pacts use: 
 
-Example Usage http://host/sum?numbers=1,2,1,3
+```sbt test```
+
+
+Example Usage 
+
+```http://host/sum?numbers=1,2,1,3```
